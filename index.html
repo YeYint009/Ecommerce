@@ -52,7 +52,8 @@
       </div>
     </div>
   </header>
-  <section class="cart-box fixed w-96 h-screen border-s-2 border-neutral-700 bg-white top-0 right-0 z-[2000]">
+  <div class="header-spacer h-16"></div>
+  <section class="cart-box flex flex-col fixed w-96 h-screen border-s-2 border-neutral-700 bg-white top-0 right-0 z-[2000]">
     <div class="cart-header border-b-2 px-3 border-neutral-700">
       <div class="flex justify-between items-center">
       <div class="">
@@ -70,11 +71,16 @@
   </div>
 </div>
 </div>
-    <div class="cart-body"></div>
+    <div class="cart-body flex-grow flex justify-center items-center">
+      <div class="text-center w-3/4">
+        <img src="./public/undraw_empty_cart_co35.svg" alt="">
+        <p class="font-san">There is no item in cart</p>
+      </div>
+    </div>
 
-    <div class="cart-footer px-3">
-      <div class="flex flex-col justify-between py-3">
-        <div class="">
+    <div class="cart-footer px-3 border-t-2 border-neutral-600">
+      <div class="flex flex-col justify-start py-3">
+        <div class=" text-end">
           <p class=" text-neutral-500 font-san">Total Cost</p>
           <h1 class="font-semibold text-xl font-san">$ 0</h1>
         </div>
@@ -82,11 +88,10 @@
          Order Now
           
       </button>
-  </div>
+       </div>
     </div>
 
   </section>
-  <div class="header-spacer h-16"></div>
 
   <section id="categoryList mb-5 py-2">
     <div class="container">
